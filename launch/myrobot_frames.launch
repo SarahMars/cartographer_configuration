@@ -1,0 +1,11 @@
+<launch>
+
+	<param name="robot_description" command="cat $(find slam_study)/models/myrobot.xml" />
+	<node name="robot_state_publisher" pkg="robot_state_publisher"
+		type="robot_state_publisher">
+		<param name="publish_frequency" value="20"/>
+		<param name="use_tf_static" value="false" type="bool"/>
+	</node>
+
+</launch>
+

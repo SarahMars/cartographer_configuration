@@ -1,0 +1,52 @@
+ $ roslaunch slam_study pointcloud_cartographer.launch
+
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    cartographer_node (cartographer_ros/cartographer_node)
+    cartographer_occupancy_grid_node (cartographer_ros/cartographer_occupancy_grid_node)
+    rviz (rviz/rviz)
+
+[ INFO] [1539165775.068869795]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/myrobot_3d.lua' for 'myrobot_3d.lua'.
+[ INFO] [1539165775.070453327]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1539165775.070604039]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/map_builder.lua' for 'map_builder.lua'.
+[ INFO] [1539165775.070774657]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1539165775.070854289]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/pose_graph.lua' for 'pose_graph.lua'.
+[ INFO] [1539165775.071119658]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1539165775.071201716]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[ INFO] [1539165775.071422953]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1539165775.071520880]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[ INFO] [1539165775.071829364]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[ INFO] [1539165775.071871880]: I1010 19:02:55.000000  6315 configuration_file_resolver.cc:41] Found '/home/mars/catkin_ws/src/slam_study/configs/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[ INFO] [1539165775.264291450]: I1010 19:02:55.000000  6315 submap_3d.cc:321] Added submap 1
+[ INFO] [1539165775.264821790]: I1010 19:02:55.000000  6315 map_builder_bridge.cc:130] Added trajectory with ID '0'.
+[ INFO] [1539165775.844728931]: I1010 19:02:55.000000  6315 ordered_multi_queue.cc:172] All sensor data for trajectory 0 is available starting at '636747625757570701'.
+[ INFO] [1539165776.145594557]: I1010 19:02:56.000000  6315 local_trajectory_builder_3d.cc:86] IMU not yet initialized.
+[ INFO] [1539165790.451548494]: I1010 19:03:10.000000  6315 collated_trajectory_builder.cc:72] imu rate: 49.44 Hz 2.02e-02 s +/- 1.00e-04 s (pulsed at 92.60% real time)
+[ INFO] [1539165790.451671028]: I1010 19:03:10.000000  6315 collated_trajectory_builder.cc:72] odom rate: 40.00 Hz 2.50e-02 s +/- 7.49e-04 s (pulsed at 91.23% real time)
+[ INFO] [1539165790.451788181]: I1010 19:03:10.000000  6315 collated_trajectory_builder.cc:72] points2 rate: 4.35 Hz 2.30e-01 s +/- 1.09e-01 s (pulsed at 93.03% real time)
+[ INFO] [1539165805.545608982]: I1010 19:03:25.000000  6315 collated_trajectory_builder.cc:72] imu rate: 49.44 Hz 2.02e-02 s +/- 1.20e-04 s (pulsed at 100.42% real time)
+[ INFO] [1539165805.545797143]: I1010 19:03:25.000000  6315 collated_trajectory_builder.cc:72] odom rate: 40.01 Hz 2.50e-02 s +/- 9.20e-04 s (pulsed at 99.69% real time)
+[ INFO] [1539165805.545921336]: I1010 19:03:25.000000  6315 collated_trajectory_builder.cc:72] points2 rate: 3.84 Hz 2.60e-01 s +/- 9.33e-02 s (pulsed at 99.89% real time)
+[ INFO] [1539165820.715214538]: I1010 19:03:40.000000  6315 collated_trajectory_builder.cc:72] imu rate: 49.45 Hz 2.02e-02 s +/- 8.97e-05 s (pulsed at 101.63% real time)
+[ INFO] [1539165820.715337548]: I1010 19:03:40.000000  6315 collated_trajectory_builder.cc:72] odom rate: 40.00 Hz 2.50e-02 s +/- 8.51e-04 s (pulsed at 102.50% real time)
+[ INFO] [1539165820.715433502]: I1010 19:03:40.000000  6315 collated_trajectory_builder.cc:72] points2 rate: 3.37 Hz 2.97e-01 s +/- 1.79e-01 s (pulsed at 101.19% real time)
+[ WARN] [1539165827.266965214]: W1010 19:03:47.000000  6315 tf_bridge.cc:52] Lookup would require extrapolation into the past.  Requested time 1539165817.346780000 but the earliest data is at time 1539165817.383995962, when looking up transform from frame [odom] to frame [imu_link]
+[ WARN] [1539165827.267340201]: W1010 19:03:47.000000  6315 tf_bridge.cc:52] Lookup would require extrapolation into the past.  Requested time 1539165817.346780000 but the earliest data is at time 1539165817.383995962, when looking up transform from frame [odom] to frame [imu_link]
+[ WARN] [1539165827.269819190]: W1010 19:03:47.000000  6315 tf_bridge.cc:52] Lookup would require extrapolation into the past.  Requested time 1539165817.346780000 but the earliest data is at time 1539165817.383995962, when looking up transform from frame [odom] to frame [imu_link]
+[ WARN] [1539165827.274754261]: W1010 19:03:47.000000  6315 tf_bridge.cc:52] Lookup would require extrapolation into the past.  Requested time 1539165817.346780000 but the earliest data is at time 1539165817.383995962, when looking up transform from frame [odom] to frame [imu_link]
+[ WARN] [1539165827.280080282]: W1010 19:03:47.000000  6315 tf_bridge.cc:52] Lookup would require extrapolation into the past.  Requested time 1539165817.346780000 but the earliest data is at time 1539165817.383995962, when looking up transform from frame [odom] to frame [imu_link]
+[ WARN] [1539165827.284358848]: W1010 19:03:47.000000  6315 tf_bridge.cc:52] Lookup would require extrapolation into the past.  Requested time 1539165817.346780000 but the earliest data is at time 1539165817.383995962, when looking up transform from frame [odom] to frame [imu_link]
+[ WARN] [1539165827.289345815]: W1010 19:03:47.000000  6315 tf_bridge.cc:52] Lookup would require extrapolation into the past.  Requested time 1539165817.346780000 but the earliest data is at time 1539165817.383995962, when looking up transform from frame [odom] to frame [imu_link]
+[ WARN] [1539165827.295566834]: W1010 19:03:47.000000  6315 tf_bridge.cc:52] Lookup would require extrapolation into the past.  Requested time 1539165817.346780000 but the earliest data is at time 1539165817.434059095, when looking up transform from frame [odom] to frame [imu_link]
+
+
+
+

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="myrobot">
+	<link name="base_link">
+		<visual>
+			<geometry>
+				<mesh filename="package://slam_study/models/myrobot_body.stl"/>
+			</geometry>
+		</visual>
+	</link>
+
+	<link name="velodyne"/>
+	<link name="imu_link"/>
+
+	<!-- Sensors -->
+	<joint name="h3d_f" type="fixed">
+		<parent link="base_link"/>
+		<child link="velodyne"/>
+		<origin xyz="0.169 0 0.31" rpy="0.0 0.0 -0.12217" />
+	</joint>
+	<joint name="imu" type="fixed">
+		<parent link="base_link"/>
+		<child link="imu_link"/>
+		<origin xyz="0.15 0.1 0.15" rpy="0 0 3.1416" />
+	</joint>
+</robot>
+
+
